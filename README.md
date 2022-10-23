@@ -25,17 +25,44 @@
 
 **Progreso del dia**:  Complete el diagrama de arquitectura con el que voy a empezar utilizando [Draw.io][draw-io]. Empeze a leer la documentacion de [Terraform][terraform]. Y office-hours con las chicas de LeT-B.
 
-## Dia 7: Octubre 17, 2022
+<!-- ## Dia 7: Octubre 17, 2022
 
-**Progreso del dia**:
+**Progreso del dia**: -->
 
+<!-- ## Dia 8: Octubre 18, 2022
 
+**Progreso del dia**: -->
 
+<!-- ## Dia 9: Octubre 19, 2022
 
+**Progreso del dia**: -->
 
+<!-- ## Dia 10: Octubre 20, 2022
 
+**Progreso del dia**: -->
+
+<!-- ## Dia 11: Octubre 21, 2022
+
+**Progreso del dia**: -->
+
+<!-- ## Dia 12: Octubre 22, 2022
+
+**Progreso del dia**: -->
+
+## Dia 13: Octubre 23, 2022
+
+**Progreso del dia**: empeze con el diagrama de arquitectura del servicio de facturacion. instalé y configure AWS cli, CDK. typescript desde cero porque no estaba usando mi computadora personal. implemente una lamba dummy en ts con [este tutorial](https://bobbyhadz.com/blog/aws-cdk-typescript-lambda)e implementé la infraestructura de DynamoDB, y S3.
+
+## Dia 14: Octubre 24, 2022
+
+**Progreso del dia**: practique usar [PDFKit][pdfkit] con este tutorial para generar una factura, personalizé la factura con un logotipo y añadi el campo del IVA, etc.
+
+<!-- ## Dia 15: Octubre 25, 2022
+
+**Progreso del dia**: -->
 
 [concourse]: https://concourse-ci.org/
 [draw-io]: https://github.com/jgraph/drawio-desktop/releases
 [makefile]: https://www.gnu.org/software/make/manual/make.html
+[pdfkit]: https://pdfkit.org/
 [terraform]: https://learn.hashicorp.com/tutorials/terraform/infrastructure-as-code?in=terraform/aws-get-started
