@@ -15,7 +15,7 @@
 
 ## Dia 4: Octubre 14, 2022
 
-**Progreso del dia**: 
+**Progreso del dia**: Recuperé este dia con una hora de lectura de documentacion de AWS Lambda, para repasar y resolver unas dudas de como escribir lambdas en Ts/node mas eficientemente con CDK.
 
 ## Dia 5: Octubre 15, 2022
 
@@ -25,13 +25,13 @@
 
 **Progreso del dia**:  Complete el diagrama de arquitectura con el que voy a empezar utilizando [Draw.io][draw-io]. Empeze a leer la documentacion de [Terraform][terraform]. Y office-hours con las chicas de LeT-B.
 
-<!-- ## Dia 7: Octubre 17, 2022
+## Dia 7: Octubre 17, 2022
 
-**Progreso del dia**: -->
+**Progreso del dia**: Recuperé este dia con una hora de debuggig y refactoring de una lambda en Ts. optimize la memoria.
 
-<!-- ## Dia 8: Octubre 18, 2022
+## Dia 8: Octubre 18, 2022
 
-**Progreso del dia**: -->
+**Progreso del dia**: empeze a leer sobre dynamoDB streams como trigger para una lambda.
 
 <!-- ## Dia 9: Octubre 19, 2022
 
