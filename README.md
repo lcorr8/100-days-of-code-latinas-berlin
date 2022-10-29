@@ -65,9 +65,9 @@
 
 **Progreso del dia**: Hoy empece con serverless, lei un poco, definí la base de datos y los permisos de ella, un funcion esqueleto, y un esqueleto de api para llamar a la base de datos.
 
-<!-- ## Dia 17: Octubre 27, 2022
+## Dia 17: Octubre 27, 2022
 
-**Progreso del dia**: Leí como definir permisos con serverless para cada servicio-->
+**Progreso del dia**: Lei sobre permisos personalizados en serverless.
 
 ## Dia 18: Octubre 28, 2022
 

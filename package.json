@@ -17,7 +17,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "lint": "",
     "link-check": "",
-    "spell-check": "cspell --show-suggestions --show-context /**/*.md'"
+    "spell-check": "cspell --show-suggestions --show-context '/**/*.md'"
   },
   "dependencies": {
     "@cspell/dict-es-es": "^2.2.2"
