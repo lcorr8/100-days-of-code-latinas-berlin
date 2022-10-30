@@ -73,9 +73,9 @@
 
 **Progreso del dia**: Practiqué la resolución de dependencias obsoletas para eliminar vulnerabilidades de seguridad. También actualicé node a la versión 16 en mi computador, ya que AWS va a depreciar v12 en las lambdas.
 
-<!-- ## Dia 19: Octubre 29, 2022
+## Dia 19: Octubre 29, 2022
 
-**Progreso del dia**: -->
+**Progreso del dia**: Hoy hice horas de oficina de LeA. Trabajé en el prototipo del servicio de facturación. Comparé qué plugin usar para Ts con serverless y lo aplique. Conseguí que una función creara un PDF (los paquetes correctos se desplegaron en la lambda) y devuelva el PDF codificado en base64. La segunda lambda graba la información de la factura a dynamo como respuesta a la petición del API. Lei un poco sobre AWS SES.
 
 <!-- ## Dia 20: Octubre 30, 2022
 
