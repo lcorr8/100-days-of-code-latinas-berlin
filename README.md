@@ -81,21 +81,26 @@
 
 **Progreso del dia**: -->
 
-<!-- ## Dia 21: Octubre 31, 2022
+## Dia 21: Octubre 31, 2022
 
-**Progreso del dia**: -->
+**Progreso del dia**: empece a escribir los tests. agregue el packet.json los siguientes paquetes: Typescript, [Jest][jest], ts-jest, @types/jest. Cree la configuración para que jest utilize ts-jest.
 
-<!-- ## Dia 22: Noviembre 1, 2022
+## Dia 22: Noviembre 1, 2022
 
-**Progreso del dia**: -->
+**Progreso del dia**: Reorganice las funciones que generan el pdf en su propia biblioteca, y generé el PDF final.
 
-<!-- ## Dia 23: Noviembre 2, 2022
+## Dia 23: Noviembre 2, 2022
 
-**Progreso del dia**: -->
+**Progreso del dia**: Leí sobre [pruebas de regresión visual automatizadas](https://medium.com/nerd-for-tech/automated-visual-regression-testing-with-typescript-puppeteer-jest-and-jest-image-snapshot-9e14dd9d0fe7) con jest y [jest-image-snapshot](https://github.com/americanexpress/jest-image-snapshot). Conseguí que algunas pruebas funcionaran con un pdf, pero la herramienta que elegí guarda automáticamente los snapshots en formato png. Tengo que ver cómo hacer png's del pdf generado para comparar snapshots, o averiguar si la comparación de snapshots de pdf realmente funciona.
+La siguiente pista también fue útil, [buffers a base64 en ts](https://medium.com/@endingwithali/testing-with-images-in-javascript-52fcbe06961f)
 
 <!-- ## Dia 24: Noviembre 3, 2022
 
 **Progreso del dia**: -->
+<!-- scheduled reading: -->
+<!-- - https://dev.to/csouchet/automated-visual-regression-testing-with-typescript-playwright-jest-and-jest-image-snapshot-2b9c -->
+<!-- https://dev.to/saniadsouza/test-for-visual-regression-with-jest-image-snapshot-4i54 -->
+<!-- https://www.digitalocean.com/community/tutorials/how-to-encode-and-decode-strings-with-base64-in-javascript -->
 
 <!-- ## Dia 25: Noviembre 4, 2022
 
@@ -123,6 +128,7 @@
 
 [concourse]: https://concourse-ci.org/
 [draw-io]: https://github.com/jgraph/drawio-desktop/releases
+[jest]: https://jestjs.io/docs/getting-started
 [makefile]: https://www.gnu.org/software/make/manual/make.html
 [pdfkit]: https://pdfkit.org/
 [terraform]: https://learn.hashicorp.com/tutorials/terraform/infrastructure-as-code?in=terraform/aws-get-started
