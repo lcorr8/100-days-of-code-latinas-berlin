@@ -15,8 +15,9 @@
   "homepage": "https://github.com/lcorr8/100-days-of-code-latinas-berlin#readme",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "lint": "",
-    "link-check": "",
+    "lint": "echo \"Error: no linter specified\" && exit 1",
+    "format": "echo \"Error: no formatter specified\" && exit 1",
+    "link-check": "echo \"Error: no link check specified\" && exit 1",
     "spell-check": "cspell --show-suggestions --show-context '/**/*.md'"
   },
   "dependencies": {
