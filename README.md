@@ -91,20 +91,20 @@
 
 ## Dia 23: Noviembre 2, 2022
 
-**Progreso del dia**: Leí sobre [pruebas de regresión visual automatizadas](https://medium.com/nerd-for-tech/automated-visual-regression-testing-with-typescript-puppeteer-jest-and-jest-image-snapshot-9e14dd9d0fe7) con jest y [jest-image-snapshot](https://github.com/americanexpress/jest-image-snapshot). Conseguí que algunas pruebas funcionaran con un pdf, pero la herramienta que elegí guarda automáticamente los snapshots en formato png. Tengo que ver cómo hacer png's del pdf generado para comparar snapshots, o averiguar si la comparación de snapshots de pdf realmente funciona.
+**Progreso del dia**: Leí sobre [pruebas de regresión visual automatizadas](https://medium.com/nerd-for-tech/automated-visual-regression-testing-with-typescript-puppeteer-jest-and-jest-image-snapshot-9e14dd9d0fe7) con jest y [jest-image-snapshot][jest-image-snapshot]. Conseguí que algunas pruebas funcionaran con un pdf, pero la herramienta que elegí guarda automáticamente los snapshots en formato png. Tengo que ver cómo hacer png's del pdf generado para comparar snapshots, o averiguar si la comparación de snapshots de pdf realmente funciona.
 La siguiente pista también fue útil, [buffers a base64 en ts](https://medium.com/@endingwithali/testing-with-images-in-javascript-52fcbe06961f)
 
-<!-- ## Dia 24: Noviembre 3, 2022
+## Dia 24: Noviembre 3, 2022
 
+**Progreso del dia**: implemente [pdf2pic](https://www.npmjs.com/package/pdf2pic) para convertir los PDFs generados en imágenes png y poderlos comparar con [jest-image-snapshot][jest-image-snapshot]. finalmente logre un visual regresion test que funciona
+
+<!-- ## Dia 25: Noviembre 4, 2022
 **Progreso del dia**: -->
+
 <!-- scheduled reading: -->
 <!-- - https://dev.to/csouchet/automated-visual-regression-testing-with-typescript-playwright-jest-and-jest-image-snapshot-2b9c -->
 <!-- https://dev.to/saniadsouza/test-for-visual-regression-with-jest-image-snapshot-4i54 -->
 <!-- https://www.digitalocean.com/community/tutorials/how-to-encode-and-decode-strings-with-base64-in-javascript -->
-
-<!-- ## Dia 25: Noviembre 4, 2022
-
-**Progreso del dia**: -->
 
 <!-- ## Dia 26: Noviembre 5, 2022
 
@@ -129,6 +129,7 @@ La siguiente pista también fue útil, [buffers a base64 en ts](https://medium.c
 [concourse]: https://concourse-ci.org/
 [draw-io]: https://github.com/jgraph/drawio-desktop/releases
 [jest]: https://jestjs.io/docs/getting-started
+[jest-image-snapshot]: https://github.com/americanexpress/jest-image-snapshot
 [makefile]: https://www.gnu.org/software/make/manual/make.html
 [pdfkit]: https://pdfkit.org/
 [terraform]: https://learn.hashicorp.com/tutorials/terraform/infrastructure-as-code?in=terraform/aws-get-started
