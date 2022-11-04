@@ -19,7 +19,7 @@
 
 ## Dia 5: Octubre 15, 2022
 
-**Progreso del dia**: Investigue como lograr un sistema para reservar citas usando un chatbot. De todas las opciones que vi la que mas me gusto fue [esta](https://aws.amazon.com/blogs/machine-learning/build-an-appointment-scheduler-interface-integrated-with-meta-using-amazon-lex-and-amazon-connect/). Intentare seguir el blogpost y hacer este, con unas cuantas modificaciones. Me gustaria hacerlo todo usando Infraestructura en forma de código (IaC) quizas con [serverless][https://www.serverless.com/framework/docs/getting-started] o [terraform][terraform] no se. Defini mas o menos que quiero de la infraestructura y creo que omitire lo de la llamada y el mensaje de texto, optando mejor por confirmacion por email, o a través del chatbot si es posible. Y si puedo quizas integrar alguna forma de pago por la cita, vamos a ver...
+**Progreso del dia**: Investigue como lograr un sistema para reservar citas usando un chatbot. De todas las opciones que vi la que mas me gusto fue [esta](https://aws.amazon.com/blogs/machine-learning/build-an-appointment-scheduler-interface-integrated-with-meta-using-amazon-lex-and-amazon-connect/). Intentare seguir el blogpost y hacer este, con unas cuantas modificaciones. Me gustaria hacerlo todo usando Infraestructura en forma de código (IaC) quizas con [serverless](https://www.serverless.com/framework/docs/getting-started) o [terraform][terraform] no se. Defini mas o menos que quiero de la infraestructura y creo que omitire lo de la llamada y el mensaje de texto, optando mejor por confirmacion por email, o a través del chatbot si es posible. Y si puedo quizas integrar alguna forma de pago por la cita, vamos a ver...
 
 ## Dia 6: Octubre 16, 2022
 
@@ -99,12 +99,9 @@ La siguiente pista también fue útil, [buffers a base64 en ts](https://medium.c
 **Progreso del dia**: implemente [pdf2pic](https://www.npmjs.com/package/pdf2pic) para convertir los PDFs generados en imágenes png y poderlos comparar con [jest-image-snapshot][jest-image-snapshot]. Finalmente logre una prueba de regresion visual que funciona.
 
 ## Dia 25: Noviembre 4, 2022
-**Progreso del dia**: Finalmente tengo una lambda que crea una factura en formato PDF. Por ahora la lambda me devuelve el PDF en base64. Creo que me va a servir para anexarlo a un email, también tengo pensado guardar una copia de las facturas en S3. Pero aun no he decidido como organizo los pasos. Estoy considerando utilizar AWS Stepfunctions para practicar. Asi podre agregar pasos manuales al flow también.
+**Progreso del dia**: Finalmente tengo una lambda que crea una factura en formato PDF. Por ahora la lambda me devuelve el PDF en base64. Creo que me va a servir para anexarlo a un email, tambien tengo pensado guardar una copia de las facturas en S3. Pero aun no he decidido como organizo los pasos. Estoy considerando utilizar AWS Stepfunctions para practicar. Asi podre agregar pasos manuales al flow también.
 
-<!-- scheduled reading: -->
-<!-- - https://dev.to/csouchet/automated-visual-regression-testing-with-typescript-playwright-jest-and-jest-image-snapshot-2b9c -->
-<!-- https://dev.to/saniadsouza/test-for-visual-regression-with-jest-image-snapshot-4i54 -->
-<!-- https://www.digitalocean.com/community/tutorials/how-to-encode-and-decode-strings-with-base64-in-javascript -->
+pistas de como usar buffers con pdfkit en lambda con serverless[1](https://austingil.com/generating-pdfs-node-pdfkit-serverless-aws-lambda/), [2](https://jamesthom.as/2021/01/generating-serverless-pdfs-with-aws-lambda-pdfkit/)
 
 <!-- ## Dia 26: Noviembre 5, 2022
 
@@ -133,3 +130,52 @@ La siguiente pista también fue útil, [buffers a base64 en ts](https://medium.c
 [makefile]: https://www.gnu.org/software/make/manual/make.html
 [pdfkit]: https://pdfkit.org/
 [terraform]: https://learn.hashicorp.com/tutorials/terraform/infrastructure-as-code?in=terraform/aws-get-started
+
+<!-- chatbot appointment scheduler
+https://github.com/aws-samples/serverless-appointment-scheduler-amazon-connect -->
+
+<!-- save pdf to s3, things to keep in mind:
+https://github.com/foliojs/pdfkit/issues/975
+https://github.com/foliojs/pdfkit/issues/265#issuecomment-246564718 -->
+
+<!-- scheduled reading:
+https://dev.to/csouchet/automated-visual-regression-testing-with-typescript-playwright-jest-and-jest-image-snapshot-2b9c
+https://dev.to/saniadsouza/test-for-visual-regression-with-jest-image-snapshot-4i54
+https://www.digitalocean.com/community/tutorials/how-to-encode-and-decode-strings-with-base64-in-javascript -->
+
+<!-- idempotent lambdas: https://aws.amazon.com/premiumsupport/knowledge-center/lambda-function-idempotent/ -->
+<!-- https://docs.aws.amazon.com/lambda/latest/dg/typescript-handler.html -->
+
+<!-- writing object oriented typescript code for aws lambda/ https://blog.10pines.com/2019/07/23/writing-object-oriented-typescript-code-for-aws-lambda/ -->
+
+<!-- api gateway reading:
+https://docs.aws.amazon.com/apigateway/latest/developerguide/getting-started.html
+https://www.freecodecamp.org/news/build-an-api-with-typescript-and-aws/ -->
+
+<!-- apigateway plus dynamo and lambda:
+https://www.freecodecamp.org/news/build-an-api-with-typescript-and-aws/
+https://github.com/serverless/examples/tree/v3/aws-node-http-api-typescript-dynamodb
+https://www.freecodecamp.org/news/build-an-api-with-typescript-and-aws/
+https://github.com/serverless/examples/blob/v3/aws-node-http-api-typescript/handler.ts
+https://github.com/serverless/examples/blob/v3/aws-node-rest-api-typescript-simple/handler.ts
+https://github.com/serverless/examples/blob/v3/aws-node-rest-api-typescript/app/service/books.ts
+https://github.com/serverless/examples/blob/v3/aws-node-typescript-rest-api-with-dynamodb/todos/get.ts -->
+
+<!-- testing
+https://basarat.gitbook.io/typescript/intro-1/jest
+https://kalinchernev.github.io/tdd-serverless-jest
+https://dev.to/rudijs/serverless-framework-api-end-to-end-testing-using-jest-6ei
+https://claudiajs.com/tutorials/designing-testable-lambdas.html
+Unit testing for Node.js Serverless projects with Jest: https://www.serverless.com/blog/unit-testing-nodejs-serverless-jest
+https://branchv60--serverless-stack.netlify.app/chapters/unit-tests-in-serverless.html
+https://dev.to/rudijs/serverless-framework-api-end-to-end-testing-using-jest-6ei
+https://www.youtube.com/watch?v=0BVdWnID14M
+https://tealfeed.com/test-visual-regression-jest-image-snapshot-20126
+
+integration testing with serverless and jest: https://www.youtube.com/watch?v=0BVdWnID14M
+
+ts deep dive: https://basarat.gitbook.io/typescript/getting-started/why-typescript
+
+stepfunctions:
+https://reflectoring.io/getting-started-with-aws-step-functions-tutorial/
+https://blog.searce.com/create-and-deploy-aws-step-function-with-serverless-framework-e6e9844359e5 -->
