@@ -83,7 +83,7 @@
 
 ## Dia 21: Octubre 31, 2022
 
-**Progreso del dia**: empece a escribir los tests. agregue el packet.json los siguientes paquetes: Typescript, [Jest][jest], ts-jest, @types/jest. Cree la configuración para que jest utilize ts-jest.
+**Progreso del dia**: empece a escribir los tests. agregue a el packet.json los siguientes paquetes: Typescript, [Jest][jest], ts-jest, @types/jest. Creé la configuración para que jest utilize ts-jest.
 
 ## Dia 22: Noviembre 1, 2022
 
@@ -96,10 +96,10 @@ La siguiente pista también fue útil, [buffers a base64 en ts](https://medium.c
 
 ## Dia 24: Noviembre 3, 2022
 
-**Progreso del dia**: implemente [pdf2pic](https://www.npmjs.com/package/pdf2pic) para convertir los PDFs generados en imágenes png y poderlos comparar con [jest-image-snapshot][jest-image-snapshot]. finalmente logre un visual regresion test que funciona
+**Progreso del dia**: implemente [pdf2pic](https://www.npmjs.com/package/pdf2pic) para convertir los PDFs generados en imágenes png y poderlos comparar con [jest-image-snapshot][jest-image-snapshot]. Finalmente logre una prueba de regresion visual que funciona.
 
-<!-- ## Dia 25: Noviembre 4, 2022
-**Progreso del dia**: -->
+## Dia 25: Noviembre 4, 2022
+**Progreso del dia**: Finalmente tengo una lambda que crea una factura en formato PDF. Por ahora la lambda me devuelve el PDF en base64. Creo que me va a servir para anexarlo a un email, también tengo pensado guardar una copia de las facturas en S3. Pero aun no he decidido como organizo los pasos. Estoy considerando utilizar AWS Stepfunctions para practicar. Asi podre agregar pasos manuales al flow también.
 
 <!-- scheduled reading: -->
 <!-- - https://dev.to/csouchet/automated-visual-regression-testing-with-typescript-playwright-jest-and-jest-image-snapshot-2b9c -->
