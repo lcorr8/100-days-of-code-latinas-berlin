@@ -37,9 +37,14 @@
 
 **Progreso del dia**: Recuperé este dia: Agregué un corrector ortográfico en español porque 🙈🙊
 
-<!-- ## Dia 10: Octubre 20, 2022
+## Dia 10: Octubre 20, 2022
 
-**Progreso del dia**: -->
+**Progreso del dia**: recupere este dia leyendo los siguientes artículos.
+-[https://dev.to/saniadsouza/test-for-visual-regression-with-jest-image-snapshot-4i54](https://dev.to/saniadsouza/test-for-visual-regression-with-jest-image-snapshot-4i54)
+- [https://www.digitalocean.com/community/tutorials/how-to-encode-and-decode-strings-with-base64-in-javascript](https://www.digitalocean.com/community/tutorials/how-to-encode-and-decode-strings-with-base64-in-javascript)
+- y empece este pero no lo termine [https://reflectoring.io/getting-started-with-aws-step-functions-tutorial/
+https://blog.searce.com/](https://reflectoring.io/getting-started-with-aws-step-functions-tutorial/
+https://blog.searce.com/)
 
 <!-- ## Dia 11: Octubre 21, 2022
 
@@ -99,7 +104,7 @@ La siguiente pista también fue útil, [buffers a base64 en ts](https://medium.c
 **Progreso del dia**: implemente [pdf2pic](https://www.npmjs.com/package/pdf2pic) para convertir los PDFs generados en imágenes png y poderlos comparar con [jest-image-snapshot][jest-image-snapshot]. Finalmente logre una prueba de regresion visual que funciona.
 
 ## Dia 25: Noviembre 4, 2022
-**Progreso del dia**: Finalmente tengo una lambda que crea una factura en formato PDF. Por ahora la lambda me devuelve el PDF en base64. Creo que me va a servir para anexarlo a un email, tambien tengo pensado guardar una copia de las facturas en S3. Pero aun no he decidido como organizo los pasos. Estoy considerando utilizar AWS Stepfunctions para practicar. Asi podre agregar pasos manuales al flow también.
+**Progreso del dia**: Finalmente tengo una lambda que crea una factura en formato PDF. Por ahora la lambda me devuelve el PDF en base64. Creo que me va a servir para anexarlo a un email, también tengo pensado guardar una copia de las facturas en S3. Pero aun no he decidido como organizo los pasos. Estoy considerando utilizar AWS Stepfunctions para practicar. Asi podre agregar pasos manuales al flow también.
 
 pistas de como usar buffers con pdfkit en lambda con serverless[1](https://austingil.com/generating-pdfs-node-pdfkit-serverless-aws-lambda/), [2](https://jamesthom.as/2021/01/generating-serverless-pdfs-with-aws-lambda-pdfkit/)
 
@@ -137,11 +142,6 @@ https://github.com/aws-samples/serverless-appointment-scheduler-amazon-connect -
 <!-- save pdf to s3, things to keep in mind:
 https://github.com/foliojs/pdfkit/issues/975
 https://github.com/foliojs/pdfkit/issues/265#issuecomment-246564718 -->
-
-<!-- scheduled reading:
-https://dev.to/csouchet/automated-visual-regression-testing-with-typescript-playwright-jest-and-jest-image-snapshot-2b9c
-https://dev.to/saniadsouza/test-for-visual-regression-with-jest-image-snapshot-4i54
-https://www.digitalocean.com/community/tutorials/how-to-encode-and-decode-strings-with-base64-in-javascript -->
 
 <!-- idempotent lambdas: https://aws.amazon.com/premiumsupport/knowledge-center/lambda-function-idempotent/ -->
 <!-- https://docs.aws.amazon.com/lambda/latest/dg/typescript-handler.html -->
